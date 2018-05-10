@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#"
+     xml:base="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#activity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#district -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#district"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasComponents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasComponents">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Components"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasInstantiation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasInstantiation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasPart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Components"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasRelationship">
+        <rdfs:comment>组成关系或实例化关系各服务的结果合并方法</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#relatedDataset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#relatedDataset">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#URL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#URL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasPart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#hasPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+        <rdfs:comment>服务名称</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#parameterComments -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#parameterComments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#parameters -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#parameters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+        <rdfs:comment>服务运行时需要传入的参数，格式为[{&apos;name&apos;:&apos;service&apos;,type:&apos;string&apos;}]</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#properties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#properties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+        <rdfs:comment>服务自身的属性，如：北京ETC求交易额的服务，其属性包括{district:&quot;Beijing&quot;}</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#returnValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#returnValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+        <rdfs:comment>返回值及类型，格式为[{&apos;name&apos;:&apos;returnValue&apos;,type:&apos;string&apos;}]</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#returnValueComments -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#returnValueComments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractDataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractDataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#BasicService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#BasicService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Components">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#DataType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#DataType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#District -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#District">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <name>ETCProvincialTurnoverCalculation</name>
+        <parameterComments>统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <properties>[{&apos;name&apos;:&apos;district&apos;, &apos;type&apos;:&apos;List&apos;}]</properties>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+        <rdfs:comment>省内交易额计算</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <name>ETCTransProvincialTurnoverCalculation</name>
+        <parameterComments>统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <properties>[{&apos;name&apos;:&apos;district&apos;, &apos;type&apos;:&apos;List&apos;}]</properties>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+        <rdfs:comment>跨省交易额计算</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <name>ETCTurnoverCalculation</name>
+        <parameterComments>统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <properties>[{&apos;name&apos;:&apos;district&apos;, &apos;type&apos;:&apos;List&apos;}]</properties>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+        <rdfs:comment>交易额计算</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <name>UserAmountCalculation</name>
+        <parameterComments>无参数</parameterComments>
+        <parameters>[]</parameters>
+        <properties>[{&apos;name&apos;:&apos;district&apos;, &apos;type&apos;:&apos;List&apos;}]</properties>
+        <returnValue>[{&apos;name&apos;:&apos;userAmount&apos;, &apos;type&apos;:&apos;int&apos;}]</returnValue>
+        <returnValueComments>用户数量</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#District"/>
+        <name>All</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#District"/>
+        <name>Beijing</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Component1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Component1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Components"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover"/>
+        <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
+        <name>Component1</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractDataset"/>
+        <hasInstantiation rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_HMRC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_HMRC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractDataset"/>
+        <hasInstantiation rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Hebei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Hebei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Tianjin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Tianjin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#District"/>
+        <name>Hebei</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Beijing"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Hebei"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Tianjin"/>
+        <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
+        <name>Instantiation1</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Beijing"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Hebei"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Tianjin"/>
+        <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
+        <name>Instantiation2</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin"/>
+        <name>Instantiation3</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Beijing"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Hebei"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Tianjin"/>
+        <name>Instantiation4</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Beijing"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Hebei"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Tianjin"/>
+        <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
+        <name>Instantiation5</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Beijing"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Hebei"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Tianjin"/>
+        <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
+        <name>Instantiation6</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_HMRC"/>
+        <name>Instantiation7</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_HMRC"/>
+        <name>Instantiation8</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#BasicService"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ADD</name>
+        <parameterComments>需要相加的数</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;list&apos;,&apos;type&apos;:&apos;List&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;answer&apos;, &apos;type&apos;:&apos;numerical&apos;}]</returnValue>
+        <returnValueComments>和</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All"/>
+        <hasInstantiation rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation6"/>
+        <name>ETCProvincialTurnover</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETCProvincialTurnover_Beijing</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Hebei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Hebei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETCProvincialTurnover_Hebei</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Tianjin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Tianjin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETCProvincialTurnover_Tianjin</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All"/>
+        <hasInstantiation rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation5"/>
+        <hasInstantiation rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation7"/>
+        <name>ETCTransProvincialTurnover</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETCTransProvincialTurnover_Beijing</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_HMRC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_HMRC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_HMRC"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETCTransProvincialTurnover_HMRC</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Hebei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Hebei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETCTransProvincialTurnover_Hebei</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Tianjin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Tianjin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETCTransProvincialTurnover_Tianjin</name>
+        <parameterComments>需要统计的起始时间</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All"/>
+        <hasComponents rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Component1"/>
+        <hasInstantiation rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation2"/>
+        <name>ETC_Turnover</name>
+        <parameterComments>需要统计的时间段</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETC_Turnover_Beijing</name>
+        <parameterComments>需要统计的时间段</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Hebei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Hebei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETC_Turnover_Hebei</name>
+        <parameterComments>需要统计的时间段</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Tianjin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Tianjin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>ETC_Turnover_Tianjin</name>
+        <parameterComments>需要统计的时间段</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+        <returnValueComments>交易额</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#AbstractService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All"/>
+        <hasInstantiation rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation1"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount"/>
+        <name>UserAmount</name>
+        <parameterComments>无参数</parameterComments>
+        <parameters>[]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;userAmount&apos;, &apos;type&apos;:&apos;int&apos;}]</returnValue>
+        <returnValueComments>用户数量</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Beijing"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>UserAmount_Beijing</name>
+        <parameterComments>无参数</parameterComments>
+        <parameters>[]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;userAmount&apos;, &apos;type&apos;:&apos;int&apos;}]</returnValue>
+        <returnValueComments>用户数量</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Hebei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Hebei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Hebei"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>UserAmount_Hebei</name>
+        <parameterComments>无参数</parameterComments>
+        <parameters>[]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;userAmount&apos;, &apos;type&apos;:&apos;int&apos;}]</returnValue>
+        <returnValueComments>用户数量</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Tianjin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Tianjin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
+        <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation"/>
+        <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
+        <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Tianjin"/>
+        <URL>http://localhost:3002/service_register/data</URL>
+        <name>UserAmount_Tianjin</name>
+        <parameterComments>无参数</parameterComments>
+        <parameters>[]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;userAmount&apos;, &apos;type&apos;:&apos;int&apos;}]</returnValue>
+        <returnValueComments>用户数量</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#District"/>
+        <name>Tianjin</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
