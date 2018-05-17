@@ -10,9 +10,9 @@ import composition.*;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main(String[] args) throws Exception
     {
-    	Composition run=new Composition("UserAmountCalculation","[{\"name\":\"string\",\"value\":\"3\"},{\"name\":\"string\",\"value\":\"3\"}]") ;
+    	Composition run=new Composition("ETCTurnoverCalculation","[{\"name\":\"startTime\",\"value\":\"3\"},{\"name\":\"endTime\",\"value\":\"3\"}]") ;
     	run.decompose();
     	
 //    	get("/composition/:name",(req,res)->{

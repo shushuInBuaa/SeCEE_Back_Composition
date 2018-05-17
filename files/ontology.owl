@@ -70,6 +70,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#mainService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#mainService"/>
+    
+
+
     <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#relatedDataset -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#relatedDataset">
@@ -129,6 +135,12 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityService"/>
         <rdfs:comment>服务运行时需要传入的参数，格式为[{&apos;name&apos;:&apos;service&apos;,type:&apos;string&apos;}]</rdfs:comment>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#priority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#priority"/>
     
 
 
@@ -283,6 +295,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation">
         <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <mainService rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover"/>
         <name>ETCProvincialTurnoverCalculation</name>
         <parameterComments>统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -298,6 +311,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation">
         <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <mainService rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover"/>
         <name>ETCTransProvincialTurnoverCalculation</name>
         <parameterComments>统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -313,6 +327,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation">
         <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <mainService rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover"/>
         <name>ETCTurnoverCalculation</name>
         <parameterComments>统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -328,6 +343,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation">
         <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <mainService rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount"/>
         <name>UserAmountCalculation</name>
         <parameterComments>无参数</parameterComments>
         <parameters>[]</parameters>
@@ -364,6 +380,7 @@
         <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover"/>
         <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
         <name>Component1</name>
+        <priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</priority>
     </owl:NamedIndividual>
     
 
@@ -467,6 +484,7 @@
         <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_UserAmount_Tianjin"/>
         <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
         <name>Instantiation1</name>
+        <priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</priority>
     </owl:NamedIndividual>
     
 
@@ -480,6 +498,7 @@
         <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Tianjin"/>
         <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
         <name>Instantiation2</name>
+        <priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</priority>
     </owl:NamedIndividual>
     
 
@@ -517,6 +536,7 @@
         <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_Tianjin"/>
         <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
         <name>Instantiation5</name>
+        <priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</priority>
     </owl:NamedIndividual>
     
 
@@ -530,6 +550,7 @@
         <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCProvincialTurnover_Tianjin"/>
         <hasRelationship rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ADD"/>
         <name>Instantiation6</name>
+        <priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</priority>
     </owl:NamedIndividual>
     
 
@@ -540,6 +561,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Instantiation"/>
         <hasPart rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTransProvincialTurnover_HMRC"/>
         <name>Instantiation7</name>
+        <priority rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</priority>
     </owl:NamedIndividual>
     
 
@@ -591,7 +613,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/ETCProvincialTurnover_Beijing</URL>
         <name>ETCProvincialTurnover_Beijing</name>
         <parameterComments>需要统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -608,7 +630,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/ETCProvincialTurnover_Hebei</URL>
         <name>ETCProvincialTurnover_Hebei</name>
         <parameterComments>需要统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -625,7 +647,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/ETCProvincialTurnover_Tianjin</URL>
         <name>ETCProvincialTurnover_Tianjin</name>
         <parameterComments>需要统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -659,7 +681,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/ETCTransProvincialTurnover_Beijing</URL>
         <name>ETCTransProvincialTurnover_Beijing</name>
         <parameterComments>需要统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -676,7 +698,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#All"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_HMRC"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/ETCTransProvincialTurnover_HMRC</URL>
         <name>ETCTransProvincialTurnover_HMRC</name>
         <parameterComments>需要统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -693,7 +715,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/ETCTransProvincialTurnover_Hebei</URL>
         <name>ETCTransProvincialTurnover_Hebei</name>
         <parameterComments>需要统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -710,7 +732,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTransProvincialTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/ETCTransProvincialTurnover_Tianjin</URL>
         <name>ETCTransProvincialTurnover_Tianjin</name>
         <parameterComments>需要统计的起始时间</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
@@ -744,8 +766,8 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Beijing"/>
-        <URL>http://localhost:3002/service_register/data</URL>
-        <name>ETC_Turnover_Beijing</name>
+        <URL>http://localhost:3002/services/ETCTurnover_Beijing</URL>
+        <name>ETCTurnover_Beijing</name>
         <parameterComments>需要统计的时间段</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
         <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
@@ -757,12 +779,12 @@
     <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Hebei -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Hebei">
-        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Hebei"/>
-        <URL>http://localhost:3002/service_register/data</URL>
-        <name>ETC_Turnover_Hebei</name>
+        <URL>http://localhost:3002/services/ETCTurnover_Hebei</URL>
+        <name>ETCTurnover_Hebei</name>
         <parameterComments>需要统计的时间段</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
         <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
@@ -774,12 +796,12 @@
     <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Tianjin -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_ETCTurnover_Tianjin">
-        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#EntityDataset"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#CustomizedService"/>
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCTurnoverCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_ETCTurnover_Tianjin"/>
-        <URL>http://localhost:3002/service_register/data</URL>
-        <name>ETC_Turnover_Tianjin</name>
+        <URL>http://localhost:3002/services/ETCTurnover_Tianjin</URL>
+        <name>ETCTurnover_Tianjin</name>
         <parameterComments>需要统计的时间段</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;startTime&apos;, &apos;type&apos;:&apos;datatime&apos;},{&apos;name&apos;:&apos;endTime&apos;, &apos;type&apos;:&apos;datatime&apos;}]</parameters>
         <returnValue>[{&apos;name&apos;:&apos;turnover&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
@@ -866,5 +888,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
