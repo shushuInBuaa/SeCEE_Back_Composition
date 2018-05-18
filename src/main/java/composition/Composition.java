@@ -191,7 +191,7 @@ public class Composition {
 				
 				if(parameters.size()!=0)
 					params=gson.toJson(parameters);
-				else
+				else 
 					params=null;
 				ExecutorService pool=Executors.newCachedThreadPool();
 							
@@ -289,6 +289,11 @@ public class Composition {
 	
 	Object combineResult(ArrayList<Object> resultList)
 	{
+		//所有numerical类型结果支持相加ADD
+		//所有类型支持返回Map<地区，结果>MAP
+		//所有类型支持求并集UNION
+		
+		
 		if(resultList.size()==0)
 		{
 			System.out.println("结果list不合法，没有元素");
