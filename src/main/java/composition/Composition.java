@@ -290,6 +290,7 @@ public class Composition {
 	Object combineResult(ArrayList<Object> resultList)
 	{
 		//所有numerical类型结果支持相加ADD
+		//所有numerical类型结果支持求平均AVERAGE
 		//所有类型支持返回Map<地区，结果>MAP
 		//所有类型支持求并集UNION
 		

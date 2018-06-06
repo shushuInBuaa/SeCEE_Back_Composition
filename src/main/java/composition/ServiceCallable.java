@@ -60,6 +60,10 @@ public class ServiceCallable implements Callable<Object>{
 			response=client.execute(get);
 			HttpEntity entity=response.getEntity();
 			httpResult=EntityUtils.toString(entity);
+			//httpResult返回服务请求任务编号
+			//轮询，调用getResult服务在数据库中查找相应服务请求任务编号的结果
+			//一旦查找到了就停止工作，进行resultTypeConvert();
+			
 			result=resultTypeConvert(httpResult);
 		}
 		catch(Exception e)
