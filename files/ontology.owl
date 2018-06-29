@@ -291,6 +291,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_Divide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_Divide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity"/>
+        <mainService rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_Divide"/>
+        <name>Divide</name>
+        <parameters>[{&quot;name&quot;:&quot;dividend&quot;, &quot;type&quot;:&quot;double&quot;},{&quot;name&quot;:&quot;divisor&quot;, &quot;type&quot;:&quot;double&quot;}]</parameters>
+        <properties>[]</properties>
+        <returnValue>[{&apos;name&apos;:&apos;result&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_ETCProvincialTurnoverCalculation">
@@ -584,8 +597,21 @@
         <name>ADD</name>
         <parameterComments>需要相加的数</parameterComments>
         <parameters>[{&apos;name&apos;:&apos;list&apos;,&apos;type&apos;:&apos;List&apos;}]</parameters>
-        <returnValue>[{&apos;name&apos;:&apos;answer&apos;, &apos;type&apos;:&apos;numerical&apos;}]</returnValue>
+        <returnValue>[{&apos;name&apos;:&apos;answer&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
         <returnValueComments>和</returnValueComments>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_Divide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Service_Divide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#BasicService"/>
+        <URL>http://localhost:3002/services/Divide</URL>
+        <name>除</name>
+        <parameterComments>dividend被除数，divisor除数</parameterComments>
+        <parameters>[{&apos;name&apos;:&apos;dividend&apos;, &apos;type&apos;:&apos;double&apos;},{&apos;name&apos;:&apos;divisor&apos;, &apos;type&apos;:double&apos;}]</parameters>
+        <returnValue>[{&apos;name&apos;:&apos;result&apos;, &apos;type&apos;:&apos;double&apos;}]</returnValue>
     </owl:NamedIndividual>
     
 
@@ -834,7 +860,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Beijing"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Beijing"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/UserAmount_Beijing</URL>
         <name>UserAmount_Beijing</name>
         <parameterComments>无参数</parameterComments>
         <parameters>[]</parameters>
@@ -851,7 +877,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Hebei"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Hebei"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/UserAmount_Hebei</URL>
         <name>UserAmount_Hebei</name>
         <parameterComments>无参数</parameterComments>
         <parameters>[]</parameters>
@@ -868,7 +894,7 @@
         <activity rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Activity_UserAmountCalculation"/>
         <district rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Tianjin"/>
         <relatedDataset rdf:resource="http://www.semanticweb.org/shushu/ontologies/2018/2/untitled-ontology-257#Dataset_UserAmount_Tianjin"/>
-        <URL>http://localhost:3002/service_register/data</URL>
+        <URL>http://localhost:3002/services/UserAmount_Tianjin</URL>
         <name>UserAmount_Tianjin</name>
         <parameterComments>无参数</parameterComments>
         <parameters>[]</parameters>

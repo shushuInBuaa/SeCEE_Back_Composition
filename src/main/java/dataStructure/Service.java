@@ -6,6 +6,11 @@ public class Service {
 	String parameters;
 	String returnValue;
 	
+	public Service()
+	{
+		
+	}
+	
 	public Service(String name, String url, String parameters, String returnValue)
 	{
 		this.name=name;

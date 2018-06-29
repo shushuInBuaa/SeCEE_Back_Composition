@@ -138,6 +138,31 @@ public class OWLHelper {
 		return services;
 	}
 	
+	public Service getServiceByServiceName(String serviceName,String params)
+	{
+		String sparql=PREFIX+"select ?url ?returnValue ?parameters "
+				+ "where{"
+				+ "?service pro:URL ?url."
+				+ "?service pro:returnValue ?returnValue."
+				+ "?service pro:name '"+serviceName+"'"
+				+ "}";
+		
+		Query query=QueryFactory.create(sparql);
+		QueryExecution qe=QueryExecutionFactory.create(query, model);
+		ResultSet results=qe.execSelect();
+		
+		if(results.hasNext())
+		{
+			QuerySolution result=results.next();
+			return new Service(serviceName,result.get("url").toString(),params,result.get("returnValue").toString());
+		}
+		else
+		{
+			System.out.println("没有这个服务");
+			return new Service();
+		}
+	}
+	
 
 //  public HashMap<String, HashMap<String, RDFNode>> getDetailedInstantiationForAbstractService(String abstractServiceName)
 //	{
@@ -331,5 +356,24 @@ public class OWLHelper {
 			priority=Integer.getInteger(results.next().get("priority").toString());
 		}
 		return priority;
+	}
+	
+	public boolean isBasicService(String serviceName)
+	{
+		String sparql=PREFIX+"select ?type "
+				+ "where{"
+				+ " ?obj rdf:type pro:BasicService ."
+				+ " ?obj pro:name '"+serviceName+"'"
+				+ "}";
+		
+		Query query=QueryFactory.create(sparql);
+		QueryExecution qe=QueryExecutionFactory.create(query,model);
+		ResultSet results=qe.execSelect();
+		
+		if(results.hasNext())
+		{
+			return true;
+		}
+		else return false;
 	}
 }

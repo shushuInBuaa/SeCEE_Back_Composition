@@ -38,39 +38,58 @@ public class Composition {
 		ontology.readOntologyFile("files/ontology.owl");
 	}
 	
-	public void decompose() throws Exception
+	public Object decompose() throws Exception
 	{
 		boolean noPlan=false;
 		seperatePropertiesAndParameters();
 		String mainServiceName=ontology.getMainServiceNameByActivity(activityName);
-		if(properties.size()==0)
+		
+		if(ontology.isBasicService(mainServiceName))
 		{
-			System.out.println("————————————启动组合————————————————");
-			Object result=searchAndExecutePlan(mainServiceName);
-			while(result==null&&!noPlan)
-			{
-				//重新组合
-				if(result==null)
-					System.out.println("（不一定对）方案不可用："+usedPlan.get(usedPlan.size()-1));
-				System.out.println("重新组合");
-				result=searchAndExecutePlan(mainServiceName);
-			}
-			
-			if(noPlan)
-			{
-				System.out.println("没有方案了！");
-			}
-			else
-			{
-				System.out.println("最终结果为: "+result);
-			}
+			//basicservice的mainservice就是它自身，不需要继续实例化了
+			Service service=ontology.getServiceByServiceName(mainServiceName,params);
+			ServiceCallable callable=new ServiceCallable(service);
+			FutureTask<Object> task=new FutureTask<Object>(callable);
+			Thread thread=new Thread(task);
+			thread.start();
+			Object result=task.get();
+			return result;
 		}
 		else
 		{
-			//从所有Instantiation中挑选相应符合标准的service
-			searchForServiceFilteredByPropertiesAndExecute(mainServiceName);
-			
+			if(properties.size()==0)
+			{
+				System.out.println("————————————启动组合————————————————");
+				Object result=searchAndExecutePlan(mainServiceName);
+				while(result==null&&!noPlan)
+				{
+					//重新组合
+					if(result==null)
+						System.out.println("（不一定对）方案不可用："+usedPlan.get(usedPlan.size()-1));
+					System.out.println("重新组合");
+					result=searchAndExecutePlan(mainServiceName);
+				}
+				
+				if(noPlan)
+				{
+					System.out.println("没有方案了！");
+					return new Object();
+				}
+				else
+				{
+					System.out.println("最终结果为: "+result);
+					return result;
+				}
+			}
+			else
+			{
+				//从所有Instantiation中挑选相应符合标准的service
+				searchForServiceFilteredByPropertiesAndExecute(mainServiceName);
+				
+				return new Object();
+			}
 		}
+		
 
 	}
 	
@@ -118,7 +137,6 @@ public class Composition {
 				else if(ontologyProperties.containsKey(name))
 					this.properties.put(name, new Variable(name, ontologyParameters.get(name),value));
 			}
-			
 			
 		}
 		catch(Exception e)

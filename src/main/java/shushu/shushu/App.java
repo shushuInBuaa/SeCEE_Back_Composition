@@ -11,15 +11,17 @@ import composition.*;
 public class App 
 {
     public static void main(String[] args) throws Exception
-    {
-    	Composition run=new Composition("ETCTurnoverCalculation","[{\"name\":\"startTime\",\"value\":\"3\"},{\"name\":\"endTime\",\"value\":\"3\"}]") ;
-    	run.decompose();
-    	
-//    	get("/composition/:name",(req,res)->{
-//			String name=req.params(":name");
-//			return "I'm wang"+name;
-//		});
-    	
-    
+    {   	
+    	get("/composition/:name/:params",(req,res)->{
+			String name=req.params(":name");//"ETCTurnoverCalculation"
+			String params=req.params(":params");//"[{\"name\":\"startTime\",\"value\":\"3\"},{\"name\":\"endTime\",\"value\":\"3\"}]"
+			//[%7B"name":"startTime","value":"3"%7D,%7B"name":"endTime","value":"3"%7D]
+			
+			Composition run=new Composition(name,params) ;
+	    	Object result=run.decompose();
+			
+	    	return result;
+	    	
+		});
     }
 }
